@@ -13,7 +13,8 @@ public class TestCliente {
 
 
         Cliente cliente = new Cliente();
-        cliente.enviar(nombre);
+        String respuesta = cliente.enviar(nombre, "INGRESO");
+        System.out.println("Respuesta del servidor: " + respuesta);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
